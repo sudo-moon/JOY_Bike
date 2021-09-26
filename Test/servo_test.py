@@ -10,8 +10,8 @@ GPIO.setup(SERVO, GPIO.OUT)
 servo = GPIO.PWM(SERVO, 50) # GPIO 17 for PWM with PWM 50Hz
 servo.start(2.5) # Initalization
 
-def rotate(rotate):
-    duty = float(angle) / 10.0 + 2.5
+def rotate(angle):
+    duty = float(angle) / 18.0 + 2.5
     servo.ChangeDutyCycle(duty)
     
 try:
